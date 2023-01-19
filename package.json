@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-yt-second",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karolp512/Bootstrap-YT-second.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karolp512/Bootstrap-YT-second/issues"
+  },
+  "homepage": "https://github.com/Karolp512/Bootstrap-YT-second#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.3"
+  }
+}
