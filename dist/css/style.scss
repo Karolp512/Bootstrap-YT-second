@@ -1,1 +1,18 @@
 @use "../scss_files/custom";
+
+//IMPORT COMPONENTS
+@use "../scss_files/components/animation";
+@use "../scss_files/components/buttons";
+@use "../scss_files/components/mixins";
+@use "../scss_files/components/typography";
+
+//IMPORT SECTIONS
+@use "../scss_files/sections/companies";
+@use "../scss_files/sections/faq";
+@use "../scss_files/sections/footer";
+@use "../scss_files/sections/get-started";
+@use "../scss_files/sections/into-section";
+@use "../scss_files/sections/navbar";
+@use "../scss_files/sections/portfolio";
+@use "../scss_files/sections/services";
+@use "../scss_files/sections/testimonials";

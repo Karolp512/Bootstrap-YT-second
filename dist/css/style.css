@@ -10932,4 +10932,63 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.btn-rounded {
+  position: relative;
+  background-color: #fff;
+  padding: 0.75rem 3.75rem 0.75rem 0.75rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 575.98px) {
+  .btn-rounded {
+    display: none;
+  }
+}
+.btn-rounded span {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #9926f0;
+}
+.btn-rounded span i {
+  color: white;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
+}
+.btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+  background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
+}
+.menu ul {
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  .menu ul {
+    align-items: flex-start;
+  }
+}
+.menu .nav-item {
+  padding: 0 0.75rem;
+}
+.menu .nav-item a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.menu .nav-item:hover:not(:last-child) {
+  transform: translateY(-0.3rem);
+}
+.menu .nav-item:hover:not(:last-child) a {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.6);
 }/*# sourceMappingURL=style.css.map */

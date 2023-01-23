@@ -1,0 +1,33 @@
+@use "../custom" as c;
+@use "../components/mixins" as *;
+
+.menu{
+    @include gradient; 
+
+    ul{
+        align-items: center;
+
+        @include c.media-breakpoint-down(sm){
+            align-items: flex-start;
+        }
+    }
+
+    .nav-item{
+        padding: 0 0.75rem;
+
+        a{
+            color: c.$white!important;
+            text-transform: capitalize;
+            font-weight: 600;
+            vertical-align: middle;
+        }
+
+        &:hover:not(:last-child){
+            transform: translateY(-0.3rem);
+
+            a{
+                border-bottom: 0.1rem solid rgba(c.$white, 0.6);
+            }
+        }
+    }
+}

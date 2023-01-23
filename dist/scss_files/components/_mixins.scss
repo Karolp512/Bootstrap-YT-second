@@ -1,0 +1,5 @@
+@use "../custom" as c;
+
+@mixin gradient{
+    background: linear-gradient(90deg, c.$primary 0%, c.$secondary 100%);
+}
