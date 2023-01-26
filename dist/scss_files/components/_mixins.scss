@@ -3,3 +3,10 @@
 @mixin gradient{
     background: linear-gradient(90deg, c.$primary 0%, c.$secondary 100%);
 }
+
+@mixin center-absolute{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,32 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/animation" as *;
+@use "../components/typography" as *;
+
+.intro{
+    @include gradient;
+    padding: 5rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    color: $white!important;
+
+    .intro-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .second-col{
+        position: relative;
+
+        .intro__play-btn{
+            @include center-absolute;
+
+            img{
+                width: 120px; 
+                border-radius: 50%;
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+                animation: pulse-btn 1.5s infinite;
+            }
+        }
+    }
+}

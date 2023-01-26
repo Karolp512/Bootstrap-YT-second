@@ -7,7 +7,7 @@
     ul{
         align-items: center;
 
-        @include c.media-breakpoint-down(sm){
+        @include c.media-breakpoint-down(md){
             align-items: flex-start;
         }
     }

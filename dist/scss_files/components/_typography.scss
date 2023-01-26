@@ -1,0 +1,15 @@
+@use "../custom" as *;
+
+.header-title{
+    width: 70%!important;
+    font-size: 3rem!important;
+    font-weight: 700!important;        
+
+    @include media-breakpoint-up(lg){
+        font-size: 4rem!important;
+    }
+}
+
+.header-text{
+    margin: 1rem 0 2rem 0;
+}
