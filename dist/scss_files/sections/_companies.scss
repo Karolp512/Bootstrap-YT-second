@@ -1,0 +1,47 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/animation" as *;
+@use "../components/typography" as *;
+
+.companies{
+    
+    .container{
+        text-align: center;
+
+        h4{
+            font-weight: 700;
+            margin: 0 0 1.25rem 0;
+        }
+
+        .line{
+            width: 200px;
+            height: 3px;
+            margin: 0 auto;
+            background-color: $primary;
+        }
+
+        .rect{
+            width: 50px;
+            height: 10px;
+            margin: 0 auto;
+            background-color: $primary;
+        }
+    }
+
+    .companies__list{
+        margin-top: 3rem;
+
+        .companies__list-element{
+            max-width: 90%;
+            height: 3rem;
+            margin: 0 15px 2rem 15px;
+    
+            padding: 0.5rem;
+            text-align: center;
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+}

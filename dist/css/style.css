@@ -10993,19 +10993,54 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.header-title {
+.intro-text {
+  font-family: "Poppins", sans-serif !important;
+}
+.intro-text .header-title {
   width: 70% !important;
   font-size: 3rem !important;
   font-weight: 700 !important;
 }
 @media (min-width: 992px) {
-  .header-title {
-    font-size: 4rem !important;
+  .intro-text .header-title {
+    font-size: 5rem !important;
   }
 }
-
-.header-text {
+.intro-text .header-text {
   margin: 1rem 0 2rem 0;
+}
+
+.companies .container {
+  text-align: center;
+}
+.companies .container h4 {
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+}
+.companies .container .line {
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.companies .container .rect {
+  width: 50px;
+  height: 10px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.companies .companies__list {
+  margin-top: 3rem;
+}
+.companies .companies__list .companies__list-element {
+  max-width: 90%;
+  height: 3rem;
+  margin: 0 15px 2rem 15px;
+  padding: 0.5rem;
+  text-align: center;
+}
+.companies .companies__list .companies__list-element img {
+  height: 100%;
 }
 
 .intro {
