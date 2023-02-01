@@ -17,3 +17,16 @@
         margin: 1rem 0 2rem 0;
     }
 }
+
+.services{
+    font-family: 'Poppins', sans-serif!important;
+}
+
+.border-right{
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+
+    @include media-breakpoint-down(md){
+        border-right: 0;
+    }
+}

@@ -13,19 +13,7 @@
             margin: 0 0 1.25rem 0;
         }
 
-        .line{
-            width: 200px;
-            height: 3px;
-            margin: 0 auto;
-            background-color: $primary;
-        }
-
-        .rect{
-            width: 50px;
-            height: 10px;
-            margin: 0 auto;
-            background-color: $primary;
-        }
+        @include line-and-rect;
     }
 
     .companies__list{
@@ -38,6 +26,12 @@
     
             padding: 0.5rem;
             text-align: center;
+
+            &:hover{
+                cursor: pointer;
+                filter: grayscale(0.8);
+            }
+
 
             img{
                 height: 100%;

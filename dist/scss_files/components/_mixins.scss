@@ -10,3 +10,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin line-and-rect{
+    .line{
+        width: 200px;
+        height: 3px;
+        margin: 0 auto;
+        background-color: c.$primary;
+    }
+
+    .rect{
+        width: 50px;
+        height: 10px;
+        margin: 0 auto;
+        background-color: c.$primary;
+    }
+}

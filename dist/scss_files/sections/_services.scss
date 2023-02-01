@@ -1,0 +1,72 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/animation" as *;
+@use "../components/typography" as *;
+
+.services{
+
+    .container{
+
+        .services__space{
+            padding: 2rem;
+
+            @include media-breakpoint-up(lg){
+                padding: 5rem;
+            }
+        }
+
+        h1{
+            font-weight: 700;
+            margin: 0rem 0 1.25rem 0;
+        }
+
+        @include line-and-rect;
+
+        .services__content{
+            margin-top: 2rem;
+        }
+
+    }
+
+    //SERVICE MARKETING
+    .services__marketing, .services__webdev, .services__cloud{
+        margin-top: 7rem;
+
+        @include media-breakpoint-down(lg){
+            margin-top: 2rem;
+        }
+    }
+        .services__content-icon--svg{
+
+            img{
+                width: 3rem;
+            }
+        }
+
+        .services__content-title{
+            display: inline-block;
+            background: linear-gradient(90deg, $primary 0%, $secondary 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: .5rem 0;
+        }
+      
+
+        .services__content-text{
+            margin: 1rem 0;
+        }
+
+        .services__content-img{
+            
+            img{
+                height: auto;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+} 
+
+    //SERVICE WEB DEVELOPMENT
+    

@@ -10993,6 +10993,10 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.btn-purple-border {
+  border: 0.1rem solid #9926f0;
+}
+
 .intro-text {
   font-family: "Poppins", sans-serif !important;
 }
@@ -11008,6 +11012,20 @@ textarea.form-control-lg {
 }
 .intro-text .header-text {
   margin: 1rem 0 2rem 0;
+}
+
+.services {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.border-right {
+  border-right: 0.1rem solid #dee2e6;
+  height: 100%;
+}
+@media (max-width: 767.98px) {
+  .border-right {
+    border-right: 0;
+  }
 }
 
 .companies .container {
@@ -11038,6 +11056,10 @@ textarea.form-control-lg {
   margin: 0 15px 2rem 15px;
   padding: 0.5rem;
   text-align: center;
+}
+.companies .companies__list .companies__list-element:hover {
+  cursor: pointer;
+  filter: grayscale(0.8);
 }
 .companies .companies__list .companies__list-element img {
   height: 100%;
@@ -11096,4 +11118,63 @@ textarea.form-control-lg {
 }
 .menu .nav-item:hover:not(:last-child) a {
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.6);
+}
+
+.services .container .services__space {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .services .container .services__space {
+    padding: 5rem;
+  }
+}
+.services .container h1 {
+  font-weight: 700;
+  margin: 0rem 0 1.25rem 0;
+}
+.services .container .line {
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.services .container .rect {
+  width: 50px;
+  height: 10px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.services .container .services__content {
+  margin-top: 2rem;
+}
+.services .services__marketing, .services .services__webdev, .services .services__cloud {
+  margin-top: 7rem;
+}
+@media (max-width: 991.98px) {
+  .services .services__marketing, .services .services__webdev, .services .services__cloud {
+    margin-top: 2rem;
+  }
+}
+.services .services__content-icon--svg img {
+  width: 3rem;
+}
+.services .services__content-title {
+  display: inline-block;
+  background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.5rem 0;
+}
+.services .services__content-text {
+  margin: 1rem 0;
+}
+.services .services__content-img img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+:root {
+  font-family: "Poppins", sans-serif !important;
 }/*# sourceMappingURL=style.css.map */
