@@ -10966,11 +10966,6 @@ textarea.form-control-lg {
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   font-weight: 600;
 }
-@media (max-width: 575.98px) {
-  .btn-rounded {
-    display: none;
-  }
-}
 .btn-rounded span {
   position: absolute;
   top: 50%;
@@ -10997,6 +10992,24 @@ textarea.form-control-lg {
   border: 0.1rem solid #9926f0;
 }
 
+@media (max-width: 575.98px) {
+  .btn-phone {
+    display: none;
+  }
+}
+
+.btn__slider {
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #fff;
+  border-radius: 0.3rem;
+  background-color: transparent;
+}
+.btn__slider i {
+  color: #fff;
+}
+
+/* ------ INTRO SECTION ------ */
 .intro-text {
   font-family: "Poppins", sans-serif !important;
 }
@@ -11014,6 +11027,7 @@ textarea.form-control-lg {
   margin: 1rem 0 2rem 0;
 }
 
+/* ------ SERVICES ------ */
 .services {
   font-family: "Poppins", sans-serif !important;
 }
@@ -11026,6 +11040,11 @@ textarea.form-control-lg {
   .border-right {
     border-right: 0;
   }
+}
+
+/* ------ TESTIMONIALS ------ */
+.testimonials {
+  font-family: "Poppins", sans-serif !important;
 }
 
 .companies .container {
@@ -11173,6 +11192,65 @@ textarea.form-control-lg {
   height: auto;
   width: 100%;
   max-width: 100%;
+}
+
+.testimonials .testimonials__content {
+  background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
+}
+.testimonials .testimonials__content .testimonials__title {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.testimonials .testimonials__content .testimonials__border {
+  width: 8rem;
+  height: 0.1rem;
+  margin: 1rem auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.testimonials .testimonials__content .testimonials__carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.testimonials .testimonials__content .testimonials__carousel::-webkit-scrollbar {
+  display: none;
+}
+.testimonials .testimonials__content .testimonials__carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+.testimonials .testimonials__content .testimonials__carousel-item .testimonials__reviews {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  padding: 4rem 1.625rem;
+  border-radius: 0.625rem;
+  background-color: #fff;
+}
+.testimonials .testimonials__content .testimonials__carousel-item .testimonials__reviews-text img {
+  height: 2rem;
+}
+.testimonials .testimonials__content .testimonials__carousel-item .testimonials__reviews .testimonials__stars {
+  margin-top: 1rem;
+  color: #9926f0;
+}
+.testimonials .testimonials__content .testimonials__carousel-item .testimonials__reviews .testimonials__photo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.testimonials .testimonials__content .testimonials__carousel-item .testimonials__reviews .testimonials__photo img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.2rem solid #9926f0;
+}
+.testimonials .testimonials__content .testimonials__carousel-item .testimonials__name {
+  margin-top: 4rem;
 }
 
 :root {

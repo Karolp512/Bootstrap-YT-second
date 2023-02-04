@@ -4,5 +4,79 @@
 @use "../components/typography" as *;
 
 .testimonials{
+    
+    .testimonials__content{
+        @include gradient;
 
+        .testimonials__title{
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .testimonials__border{
+            width: 8rem;
+            height: 0.1rem;
+            margin: 1rem auto;
+            background-color: rgba($white, 0.5);
+        }
+
+        .testimonials__carousel{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+            &-item{
+                flex-shrink: 0;
+                width: 100%;
+
+                .testimonials__reviews{
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    margin-top: 2rem;
+                    padding: 4rem 1.625rem;
+                    border-radius: 0.625rem;
+                    background-color: $white;
+        
+                    &-text{
+        
+                        img{
+                            height: 2rem;
+                        }
+                    }
+        
+                    .testimonials__stars{
+                        margin-top: 1rem;
+                        color: $primary;
+                    }
+        
+                    .testimonials__photo{
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+        
+                        img{
+                            width: 6rem;
+                            height: 6rem;
+                            border-radius: 50%;
+                            border: 0.2rem solid $primary;
+                        }
+                    }
+                }
+        
+                .testimonials__name{
+                    margin-top: 4rem;
+                }
+            }
+        }
+
+        
+    }
 }

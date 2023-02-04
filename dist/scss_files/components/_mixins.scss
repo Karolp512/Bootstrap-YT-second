@@ -26,3 +26,12 @@
         background-color: c.$primary;
     }
 }
+
+@mixin scrollFlexbox {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}

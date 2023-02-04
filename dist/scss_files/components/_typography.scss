@@ -1,5 +1,6 @@
 @use "../custom" as *;
 
+/* ------ INTRO SECTION ------ */
 .intro-text{
     font-family: 'Poppins', sans-serif!important;
 
@@ -18,6 +19,7 @@
     }
 }
 
+/* ------ SERVICES ------ */
 .services{
     font-family: 'Poppins', sans-serif!important;
 }
@@ -29,4 +31,9 @@
     @include media-breakpoint-down(md){
         border-right: 0;
     }
+}
+
+/* ------ TESTIMONIALS ------ */
+.testimonials{
+    font-family: 'Poppins', sans-serif!important;
 }

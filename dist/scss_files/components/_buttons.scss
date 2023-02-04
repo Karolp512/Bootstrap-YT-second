@@ -2,9 +2,6 @@
 @use "../components/mixins" as *;
 
 .btn-rounded{
-    @include c.media-breakpoint-down(sm){
-        display: none;
-    }
 
     position: relative;
     background-color: c.$white;
@@ -40,4 +37,22 @@
 
 .btn-purple-border{
     border: 0.1rem solid c.$primary;
+}
+
+.btn-phone{
+    @include c.media-breakpoint-down(sm){
+        display: none;
+    }
+}
+
+.btn__slider{
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid c.$white;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    
+    i{
+        color: c.$white;
+    }
 }
