@@ -11084,6 +11084,26 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.faq h1 {
+  font-weight: 700;
+  margin: 0rem 0 1.25rem 0;
+}
+.faq .line {
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.faq .rect {
+  width: 50px;
+  height: 10px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.faq .accordion-item {
+  margin: 2rem 0;
+}
+
 .intro {
   background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
   padding: 5rem 0 0 0;
