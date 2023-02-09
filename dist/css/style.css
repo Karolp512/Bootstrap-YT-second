@@ -10882,6 +10882,10 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.btn-form {
+  width: 100%;
+}
+
 /* ------ INTRO SECTION ------ */
 .intro-text {
   font-family: "Poppins", sans-serif !important;
@@ -10975,6 +10979,57 @@ textarea.form-control-lg {
 }
 .faq .accordion-item {
   margin: 2rem 0;
+}
+
+.get-started {
+  margin-top: 3rem;
+  background-color: #dee2e6;
+}
+.get-started h1 {
+  font-weight: 700;
+  margin: 0rem 0 1.25rem 0;
+  padding-top: 4rem;
+}
+.get-started .line {
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.get-started .rect {
+  width: 50px;
+  height: 10px;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.get-started p {
+  margin-top: 2rem;
+}
+.get-started .get__description {
+  background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
+}
+.get-started .get__description ul {
+  margin-top: 1rem;
+}
+.get-started .get__description ul li {
+  list-style-type: none;
+}
+.get-started .get__description ul li i {
+  font-size: 1.5rem;
+}
+.get-started .get__form {
+  background-color: #fff;
+}
+.get-started .get__form h2 {
+  display: inline-block;
+  background: linear-gradient(90deg, #9926f0 0%, #d122e3 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 4rem;
+}
+.get-started .get__form input, .get-started .get__form textarea, .get-started .get__form button {
+  font-size: 1.5rem;
 }
 
 .intro {

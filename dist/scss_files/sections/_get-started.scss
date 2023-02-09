@@ -1,0 +1,52 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../components/animation" as *;
+@use "../components/typography" as *;
+@use "../components/buttons" as *;
+
+.get-started{
+    margin-top: 3rem;
+    background-color: $gray-300;
+
+    h1{
+        font-weight: 700;
+        margin: 0rem 0 1.25rem 0;
+        padding-top: 4rem;
+    }
+    
+    @include line-and-rect;
+
+    p{
+        margin-top: 2rem;
+    }
+
+    .get__description{
+       @include gradient;
+
+       ul{
+        margin-top: 1rem;
+
+        li{
+            list-style-type: none;
+
+            i{
+                font-size: 1.5rem;
+            }
+        }
+        
+       }
+    }
+
+    .get__form{
+        background-color: $white;
+
+        h2{
+            @include textGradient;
+            padding-top: 4rem;
+        }
+
+        input, textarea, button{
+            font-size: 1.5rem;
+        }
+    }
+}

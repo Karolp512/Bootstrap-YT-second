@@ -35,3 +35,10 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
+
+@mixin textGradient{
+    display: inline-block;
+    background: linear-gradient(90deg, c.$primary 0%, c.$secondary 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

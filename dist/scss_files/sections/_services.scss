@@ -44,10 +44,7 @@
         }
 
         .services__content-title{
-            display: inline-block;
-            background: linear-gradient(90deg, $primary 0%, $secondary 100%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include textGradient;
             margin: .5rem 0;
         }
       
